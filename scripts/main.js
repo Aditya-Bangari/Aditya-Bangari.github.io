@@ -21,6 +21,7 @@ $('a.smooth-scroll')
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     
     if (target.length) {
+      console.log(target.length)
       // Only prevent default if animation is actually gonna happen
       event.preventDefault();
       $('html, body').animate({
